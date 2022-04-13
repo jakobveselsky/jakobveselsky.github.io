@@ -1,53 +1,67 @@
 {% extends "layout.html" %}
 {% block content %}
-	<div class="home">  		
-		<img src="{{url_for('static', filename='profile.jpeg')}}" align="middle" />
-		<p>
-			Educational Background:<br>
-			<br>
-			Loyola University Chicago<br>
-			Chicago, Illinios<br>
-			Bachelor of Science: Computer Science, 2021<br>
-			<br>
-			Loyola University Chicago<br> 
-			Chicago, Illinios<br>
-			Master of Science: Computer Science, Expected May 2023<br>
-			<br>
-			Projects:<br>
-			<br>
-			Computer Vision Edge Network:<br>
-			Implemented cluster of Raspberry Pi's to distribute computer vision workload. Net-booted cluster of Raspberry Pi's off TFTP server and NFS server. Created costume router for cluster network. Developed web servive to monitor and mantain cluster network.<br>
-			<br>
-			Secure Automatious Car Commutation:<br>
-			Created system with Xbox Kinect to make point clouds of cars environment. Used these views of the environment to create keys. Established secure line of commutation with environmental keys. Allows for secure richer view of a cars environment.<br>
-			<br>
-			Work Experience<br>
-			<br>			
-			Graduate Research Assistant<br>
-			Loyola University Chicago<br>
-			June 2021 - Present<br>
-			Implements and studies computer vision and artificial intelligence<br>
-			Designs and produces low power systems<br>
-			Manages team of eight undergraduate research assistants<br>
-			Works closely with Dr. Neil Klingensmith and Dr. George K. Thiruvathukal<br>
-			<br>
-			Undergraduate Teaching Assistant<br> 
-			Loyola University Chicago<br>
-			January 2020 - June 2020<br>
-			Assisted Dr.William Honing and Dr. Eric Chan-Tin in instruction of COMP 170 (Introduction to Object-Oriented Programming)<br>
-			Held weekly office hours to provide out-of-classroom assistance to students<br>
-			<br>
-			Skills & Proficiencies<br>
-			<br>
-			Programming Languages:<br>
-				Python<br>
-				C<br>
-				C++<br>
-				C#<br>
-				Java<br>
-			Linux<br>
-			PCB Construction<br>
-			Computer Vision<br>
-		</p>
+	<div class="home">
+		<div class="row">
+			<div class="column">
+				<br>
+				<img src="{{url_for('static', filename='profile.jpeg')}}" class="image1">
+				<br>
+				<img src="{{url_for('static', filename='prudue2.png')}}" class="image2">
+			</div>
+			<div class="column">			
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p1>
+					Educational Background:<br>
+					<br>
+					Loyola University Chicago<br>
+					Chicago, Illinios<br>
+					Bachelor of Science: Computer Science, 2021<br>
+					<br>
+					Loyola University Chicago<br> 
+					Chicago, Illinios<br>
+					Master of Science: Computer Science, Expected May 2023<br>
+				</p1>
+				<br>
+				<br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+				<p2>
+					Projects:<br>
+					<br>
+					Computer Vision Edge Network:<br>
+					Implemented cluster of Raspberry Pi's to distribute computer vision workload.<br>
+					Net-booted cluster of Raspberry Pi's off TFTP server and NFS server.<br>
+					Created costume router for cluster network.<br>
+					Developed web servive to monitor and mantain cluster network.<br>
+					<br>
+					Secure Automatious Car Commutation:<br>
+					Created system with Xbox Kinect to make point clouds of cars environment.<br>
+					Used these views of the environment to create keys.<br>
+					Established secure line of commutation with environmental keys.<br>
+					Allows for secure richer view of a cars environment.<br>
+				</p2>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+			</div>
+		</div>
 	</div>
 {% endblock %}
