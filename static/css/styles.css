@@ -489,6 +489,24 @@ progress {
   display: none !important;
 }
 
+.image1 {
+   margin: auto;
+   max-width: 60%;  
+   height: auto; }
+
+ .image2 {
+     margin: auto;
+     max-width: 50%;
+     height: auto; }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
