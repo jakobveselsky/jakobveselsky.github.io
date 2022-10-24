@@ -7,12 +7,9 @@
         <meta name="author" content="" />
         <title>jakob veselsky</title>
         <link rel="icon" type="image/x-icon" href="static/assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     </head>
@@ -27,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>                    
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-               	    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 		</ul>
             </div>
         </nav>
@@ -45,7 +42,9 @@
                     </h1>
                     <div class="subheading mb-5">
                         Loyola University Chicago Department of Computer Science·
-                        <a>jveselsky[@]luc.edu</a>
+                        <a>jveselsky[@]luc.edu</a><br>
+                        <br>
+                        I am a computer architect with experience in low-level software design and benchmarking looking to develop the next generation of processors.
                     </div>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/jakob-veselsky-516a92216/"><i class="fab fa-linkedin-in"></i></a>
@@ -53,6 +52,29 @@
                     </div>
                 </div>
             </section>
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                   <h2 class="mb-5">Projects</h2>
+               <div class="row">
+                    <div class="column">
+                        <div class="subheading mb-3">Computer Vision Edge Network</div>
+                            <p>Implemented cluster of low power devices to study execution of computer vision algorithms.<br>
+                                Identified and diagnosed bottlenecks on CPU bound work loads for low power devices.<br>
+                                Developed and implemented custom math kernel targeting ARM based CPUs, typically used on low power platforms, that resulted in a 5x speed up.</p.>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                         <div class="subheading mb-3">Secure Automatous Vechile-To-Vechile Communication</div>
+                             <p>Created a system to construct 3D views of a car's environment.<br>
+                                 Created keys from 3D models, establishing a secure line of commutation.<br>
+                                 After communication is established the cars can exchange realtime views and create a richer view of the environment.<br></p>
+                    </div>
+                </div>
+            </ul>
+                </div>
+           </section>
             <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -104,52 +126,28 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-		        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-			<li class="list-inline-item"><i class="devicon-c-plain"></i></li>
-			<li class="list-inline-item"><i class="devicon-debian-plain-wordmark"></i></li>
-			<li class="list-inline-item"><i class="devicon-cplusplus-plain"></i></li>
-			<li class="list-inline-item"><i class="devicon-csharp-plain"></i></li>
-			<li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-		    </ul>
+                    <h2 class="mb-5">Skills and Proficiencies</h2>
+                        <div class="subheading mb-3">PCB Construction</div>
+                            <p>Altium Designer</p>
+                        <div class="subheading mb-3">Programming Languages</div>
+                            <ul class="list-inline dev-icons">
+		                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+			                    <li class="list-inline-item"><i class="devicon-c-plain"></i></li>
+			                    <li class="list-inline-item"><i class="devicon-cplusplus-plain"></i></li>
+			                    <li class="list-inline-item"><i class="devicon-csharp-plain"></i></li>
+			                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+		                    </ul>
+                        <div class="subheading mb-3">Operating Systems</div>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item"><i class="fab fa-2x fa-linux"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-2x fa-windows"></i></li>
+                                <li class="list-inline-item"><i class="fab fa-2x fa-apple"></i></li>
+                            </ul> 
                 </div>
             </section>
-	    <!-- Projects-->
-             <section class="resume-section" id="projects">
-             	<div class="resume-section-content">
-                	<h2 class="mb-5">Projects</h2>
-				<div class="row">
- 					<div class="column">
-						<img src="{{url_for('static', filename='assets/img/intersection.jpeg')}}" class="image1"><br>
-					</div>
-					<div class="column">
-                     				<div class="subheading mb-3">Secure Automatious Car Commutation</div>
-		     				<p>Created system with Xbox Kinect to make point clouds of cars environment.<br>
- 						Used these views of the environment to create keys.<br>
- 						Established secure line of commutation with environmental keys.<br>
-						Allows for secure richer view of a cars environment.<br></p>
-					</div>
-				</div>
-				<div class="row">
-                                         <div class="column">
-						 <br><img src="{{url_for('static', filename='assets/img/prudue2.png')}}" class="image2">
-                                         </div>
-                                         <div class="column">
-                                                 <div class="subheading mb-3">Computer Vision Edge Network</div>
-                                                 <p>Implemented cluster of Raspberry Pi's to distribute computer vision workload.<br>
-                                                 Net-booted cluster of Raspberry Pi's off TFTP server and NFS server.<br>
-                                                 Created costume router for cluster network.<br>
-                                                 Developed web servive to monitor and mantain cluster network.</p.>
-                                         </div>
-                                 </div>
-		     </ul>
-             	</div>
-            </section>
-        <!-- Bootstrap core JS-->
+	    <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="static/js/scripts.js"></script>
